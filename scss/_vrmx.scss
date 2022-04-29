@@ -1,0 +1,15 @@
+/* VARIABLES (VRmx) */
+$color-principal:rgb(74, 168, 255);
+/* MIXINS (vrMX) */
+@mixin boton {
+    text-decoration: none;
+    color:white;
+    font-weight: 560;
+    padding:5px;
+    border-radius: 7px;
+    transition: 0.5s;
+    &:hover{
+        background-color: white;
+        color:$color-principal;
+    }
+}

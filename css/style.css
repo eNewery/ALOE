@@ -1,0 +1,231 @@
+/* @USE */
+/* VARIABLES (VRmx) */
+/* MIXINS (vrMX) */
+/* RESET CSS */
+* {
+  overflow: hidden;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* BODY */
+.body__container {
+  display: flex;
+  flex-direction: column;
+  /* HEADER */
+  /* MAIN */
+  /* FOOTER */
+}
+.body__container header {
+  background-color: rgb(74, 168, 255);
+  height: 10vh;
+  width: 100%;
+  border-bottom: 2px solid rgb(65, 141, 255);
+  /* NAV */
+}
+.body__container header .title__nav {
+  height: 10vh;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body__container header .title__nav a {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  text-decoration: none;
+  transition: 1s;
+  padding: 6px;
+  border-radius: 5px;
+}
+.body__container header .title__nav a:hover {
+  background-color: white;
+  color: rgb(74, 168, 255);
+}
+.body__container header nav {
+  display: flex;
+}
+.body__container header .nav__list {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+.body__container header .nav__list a {
+  text-decoration: none;
+  color: white;
+  font-weight: 560;
+  padding: 5px;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+.body__container header .nav__list a:hover {
+  background-color: white;
+  color: rgb(74, 168, 255);
+}
+.body__container main {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.body__container main .title {
+  position: relative;
+  top: 50px;
+}
+.body__container main .title p {
+  height: 100px;
+}
+.body__container main button {
+  background: none;
+  color: rgb(74, 168, 255);
+  padding: 24px;
+  cursor: pointer;
+  font-size: 24px;
+  transition: 1s;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 0;
+}
+.body__container main button:hover {
+  background-color: rgb(74, 168, 255);
+  color: white;
+}
+.body__container main h1 {
+  color: rgb(74, 168, 255);
+}
+.body__container main h2 {
+  color: rgb(74, 168, 255);
+  font-size: 18px;
+}
+.body__container main p {
+  font-size: 14px;
+  color: rgb(74, 168, 255);
+  width: 100%;
+}
+.body__container main .cards {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.body__container main .card {
+  transition: 1s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.body__container main .card:hover {
+  background-color: rgb(74, 168, 255);
+  color: white;
+}
+.body__container main .card img {
+  width: 145px;
+}
+.body__container main .card div p {
+  color: white;
+  margin-bottom: 10px;
+}
+.body__container main .card p {
+  color: rgb(74, 168, 255);
+  font-weight: bold;
+}
+.body__container footer {
+  border-top: 2px solid rgb(65, 141, 255);
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(74, 168, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* FOOTER RRSS */
+  /* FOOTER COPY */
+  /* FOOTER ASIDE */
+}
+.body__container footer .footer__rrss {
+  display: flex;
+  flex-direction: column;
+}
+.body__container footer .footer__rrss a {
+  text-decoration: none;
+  color: white;
+  font-weight: 560;
+  padding: 5px;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+.body__container footer .footer__rrss a:hover {
+  background-color: white;
+  color: rgb(74, 168, 255);
+}
+.body__container footer .footer__copy {
+  color: white;
+  font-weight: 550;
+}
+.body__container footer .footer__aside {
+  display: flex;
+  flex-direction: column;
+}
+.body__container footer .footer__aside a {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  font-weight: 560;
+  padding: 5px;
+  border-radius: 7px;
+  transition: 0.5s;
+  transition: 1s;
+}
+.body__container footer .footer__aside a:hover {
+  background-color: white;
+  color: rgb(74, 168, 255);
+}
+.body__container footer .footer__aside a:hover {
+  transition: 1s;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 568px) {
+  .body__container {
+    /* HEADER */
+    /* NAV */
+    /* MAIN */
+    /* FOOTER */
+    /* FOOTER RRSS */
+    /* FOOTER COPY */
+    /* FOOTER ASIDE */
+  }
+  .body__container header nav .title__nav a {
+    font-size: 16px;
+  }
+  .body__container .main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .body__container .main button {
+    position: relative;
+    bottom: 250px;
+  }
+  .body__container .main .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .body__container .main .cards .card {
+    display: none;
+  }
+  .body__container footer .footer__aside {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

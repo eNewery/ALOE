@@ -1,0 +1,250 @@
+/* @USE */
+@import "vrmx";
+
+
+/* RESET CSS */
+*{
+    overflow: hidden;
+    text-align: center;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+/* BODY */
+
+.body__container{
+    display: flex;
+    flex-direction: column;
+
+
+    /* HEADER */
+header {
+    background-color: $color-principal;
+    height: 10vh;
+    width: 100%;
+    border-bottom:2px solid rgb(65, 141, 255);
+    .title__nav{
+        height: 10vh;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a{
+            color:rgb(255, 255, 255);
+            font-size: 32px;
+            text-decoration: none;
+            transition: 1s;
+            padding:6px;
+            border-radius: 5px;
+            &:hover{
+                background-color: white;
+                color:$color-principal
+            }
+        }
+    }
+  /* NAV */
+  nav{
+      display:flex;
+  }
+.nav__list{
+    height: 10vh;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+list-style: none;
+align-items: center;
+a{
+@include boton;
+}
+}
+}
+  /* MAIN */
+
+
+  main {
+    height: 80vh;
+    width: 100%;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+.title{
+    position:relative;
+    top:50px;
+    p{
+        height: 100px;
+    }
+}
+button{
+background: none;
+color:$color-principal;
+padding: 24px;
+cursor:pointer;
+font-size:24px;
+transition: 1s;
+border-radius:5px;
+margin-bottom:10px;
+    border:0;
+    &:hover{
+        background-color: $color-principal;
+        color:white;
+    }
+}
+    h1{
+        color:$color-principal;
+    }
+    h2{
+        color:$color-principal;
+        font-size: 18px;
+    }
+    p{
+        font-size:14px;
+        color:$color-principal;
+        width: 100%;
+    }
+    .cards{
+        width: 100%;
+        height: 70%;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .card{
+        transition: 1s;
+        border-radius: 5px;
+        
+        cursor:pointer;
+        &:hover{
+            background-color: $color-principal;
+            color:white;
+        }
+        img{
+            width: 145px;
+        }
+        div{
+            p{
+                color:white;
+                margin-bottom:10px;
+            }
+        }
+p{
+color:$color-principal;
+font-weight: bold;
+}
+    }
+  }
+  
+
+  /* FOOTER */
+  footer {
+      border-top:2px solid rgb(65, 141, 255);
+    height: 10vh;
+    width: 100%;
+    background-color: $color-principal;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    /* FOOTER RRSS */
+.footer__rrss{
+    display:flex;
+    flex-direction: column;
+a{
+    @include boton;
+}
+}
+
+    /* FOOTER COPY */
+.footer__copy{
+color:white;
+font-weight: 550;
+}
+
+    /* FOOTER ASIDE */
+    .footer__aside{
+display: flex;
+flex-direction: column;
+a{
+    font-size:14px;
+    @include boton;
+    transition:1s;
+    &:hover{
+        transition: 1s;
+    }
+}
+    }
+  }
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width:568px) {
+
+
+.body__container{
+
+    /* HEADER */
+header{
+    nav{
+        ul{
+            li{
+                a{
+                }
+            }
+        }
+        .title__nav{
+a{
+    font-size:16px;
+}
+        }
+    }
+}
+
+    /* NAV */
+
+
+
+    /* MAIN */
+.main{
+display:flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+
+    button{
+        position: relative;
+        bottom:250px;
+    }
+.cards{
+    display:flex;
+    flex-direction: column;
+    .card{
+display:none;
+    }
+}
+}
+    /* FOOTER */
+
+    /* FOOTER RRSS */
+
+    /* FOOTER COPY */
+
+
+  /* FOOTER ASIDE */
+  footer{
+.footer__aside{
+    display:none;
+    a{
+        &:hover{
+
+        }
+    }
+}
+}
+}
+}
