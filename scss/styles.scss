@@ -16,11 +16,11 @@ font-family: sans-serif;
 .body__container{
     display: flex;
     flex-direction: column;
-
+background-color: $color-background;
 
     /* HEADER */
 header {
-    background-color: $color-principal;
+    background-color: $primary-color;
     height: 10vh;
     width: 100%;
     border-bottom:2px solid rgb(65, 141, 255);
@@ -40,7 +40,7 @@ header {
             border-radius: 5px;
             &:hover{
                 background-color: white;
-                color:$color-principal
+                color:$primary-color;
             }
         }
     }
@@ -80,7 +80,7 @@ flex-direction: column;
 }
 button{
 background: none;
-color:$color-principal;
+color:$primary-color;
 padding: 24px;
 cursor:pointer;
 font-size:24px;
@@ -89,20 +89,20 @@ border-radius:5px;
 margin-bottom:10px;
     border:0;
     &:hover{
-        background-color: $color-principal;
+        background-color: $primary-color;
         color:white;
     }
 }
-    h1{
-        color:$color-principal;
+    h1.titular{
+@extend %titular;
     }
     h2{
-        color:$color-principal;
+        color:$primary-color;
         font-size: 18px;
     }
     p{
         font-size:14px;
-        color:$color-principal;
+        color:$primary-color;
         width: 100%;
     }
     .cards{
@@ -118,7 +118,7 @@ margin-bottom:10px;
         
         cursor:pointer;
         &:hover{
-            background-color: $color-principal;
+            background-color: $primary-color;
             color:white;
         }
         img{
@@ -126,12 +126,12 @@ margin-bottom:10px;
         }
         div{
             p{
-                color:white;
+                color:$color-background;
                 margin-bottom:10px;
             }
         }
 p{
-color:$color-principal;
+color:$primary-color;
 font-weight: bold;
 }
     }
@@ -143,7 +143,7 @@ font-weight: bold;
       border-top:2px solid rgb(65, 141, 255);
     height: 10vh;
     width: 100%;
-    background-color: $color-principal;
+    background-color: $primary-color;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -248,3 +248,8 @@ display:none;
 }
 }
 }
+
+/* AVENTURAS HTML */
+.main__title{
+    @extend %titular;
+    }

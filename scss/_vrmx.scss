@@ -1,5 +1,6 @@
 /* VARIABLES (VRmx) */
-$color-principal:rgb(74, 168, 255);
+$primary-color:rgb(90, 153, 212);
+$color-background:rgb(0, 0, 41);
 /* MIXINS (vrMX) */
 @mixin boton {
     text-decoration: none;
@@ -10,6 +11,22 @@ $color-principal:rgb(74, 168, 255);
     transition: 0.5s;
     &:hover{
         background-color: white;
-        color:$color-principal;
+        color:$primary-color;
     }
+}
+
+/* MAPS */
+$sizes: (
+size1:38px,
+size2:24px,
+size3:10px,
+);
+$h1: map-get($sizes, size1);
+$h2: map-get($sizes, size2);
+$h3: map-get($sizes, size3);
+
+/* EXTEND */
+%titular{
+    font-size:$h1;
+    color:$primary-color;
 }

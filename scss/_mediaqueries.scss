@@ -1,0 +1,55 @@
+/* MEDIA QUERIES */
+@media all and (max-width:568px) {
+    .body__container{
+    
+        /* HEADER */
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                    }
+                }
+            }
+            .title__nav{
+    a{
+        font-size:16px;
+    }
+            }
+        }
+    }
+    
+        /* NAV */
+    
+    
+    
+        /* MAIN */
+    .main{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+        button{
+            position: relative;
+            bottom:250px;
+        }
+    .cards{
+        display:flex;
+        flex-direction: column;
+        .card{
+    display:none;
+        }
+    }
+    }
+        /* FOOTER */
+    
+        /* FOOTER RRSS */
+    
+        /* FOOTER COPY */
+    
+    
+      /* FOOTER ASIDE */
+      
+    }
+    }

@@ -1,6 +1,13 @@
 /* @USE */
 /* VARIABLES (VRmx) */
 /* MIXINS (vrMX) */
+/* MAPS */
+/* EXTEND */
+.main__title, .body__container main h1.titular {
+  font-size: 38px;
+  color: rgb(90, 153, 212);
+}
+
 /* RESET CSS */
 * {
   overflow: hidden;
@@ -15,12 +22,13 @@
 .body__container {
   display: flex;
   flex-direction: column;
+  background-color: rgb(0, 0, 41);
   /* HEADER */
   /* MAIN */
   /* FOOTER */
 }
 .body__container header {
-  background-color: rgb(74, 168, 255);
+  background-color: rgb(90, 153, 212);
   height: 10vh;
   width: 100%;
   border-bottom: 2px solid rgb(65, 141, 255);
@@ -43,7 +51,7 @@
 }
 .body__container header .title__nav a:hover {
   background-color: white;
-  color: rgb(74, 168, 255);
+  color: rgb(90, 153, 212);
 }
 .body__container header nav {
   display: flex;
@@ -66,7 +74,7 @@
 }
 .body__container header .nav__list a:hover {
   background-color: white;
-  color: rgb(74, 168, 255);
+  color: rgb(90, 153, 212);
 }
 .body__container main {
   height: 80vh;
@@ -85,7 +93,7 @@
 }
 .body__container main button {
   background: none;
-  color: rgb(74, 168, 255);
+  color: rgb(90, 153, 212);
   padding: 24px;
   cursor: pointer;
   font-size: 24px;
@@ -95,19 +103,16 @@
   border: 0;
 }
 .body__container main button:hover {
-  background-color: rgb(74, 168, 255);
+  background-color: rgb(90, 153, 212);
   color: white;
 }
-.body__container main h1 {
-  color: rgb(74, 168, 255);
-}
 .body__container main h2 {
-  color: rgb(74, 168, 255);
+  color: rgb(90, 153, 212);
   font-size: 18px;
 }
 .body__container main p {
   font-size: 14px;
-  color: rgb(74, 168, 255);
+  color: rgb(90, 153, 212);
   width: 100%;
 }
 .body__container main .cards {
@@ -123,25 +128,25 @@
   cursor: pointer;
 }
 .body__container main .card:hover {
-  background-color: rgb(74, 168, 255);
+  background-color: rgb(90, 153, 212);
   color: white;
 }
 .body__container main .card img {
   width: 145px;
 }
 .body__container main .card div p {
-  color: white;
+  color: rgb(0, 0, 41);
   margin-bottom: 10px;
 }
 .body__container main .card p {
-  color: rgb(74, 168, 255);
+  color: rgb(90, 153, 212);
   font-weight: bold;
 }
 .body__container footer {
   border-top: 2px solid rgb(65, 141, 255);
   height: 10vh;
   width: 100%;
-  background-color: rgb(74, 168, 255);
+  background-color: rgb(90, 153, 212);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -164,7 +169,7 @@
 }
 .body__container footer .footer__rrss a:hover {
   background-color: white;
-  color: rgb(74, 168, 255);
+  color: rgb(90, 153, 212);
 }
 .body__container footer .footer__copy {
   color: white;
@@ -186,7 +191,7 @@
 }
 .body__container footer .footer__aside a:hover {
   background-color: white;
-  color: rgb(74, 168, 255);
+  color: rgb(90, 153, 212);
 }
 .body__container footer .footer__aside a:hover {
   transition: 1s;
@@ -227,5 +232,6 @@
     display: none;
   }
 }
+/* AVENTURAS HTML */
 
 /*# sourceMappingURL=style.css.map */
