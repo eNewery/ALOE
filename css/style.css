@@ -281,11 +281,11 @@
 /* AVENTURAS HTML */
 /* MAIN */
 .main__title {
-  margin-top: 40px;
+  margin: 0;
 }
 
 .main__section {
-  height: 100%;
+  height: 90%;
 }
 
 .main__articles {

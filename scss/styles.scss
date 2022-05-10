@@ -261,11 +261,11 @@ display:none;
 
 /* MAIN */
 .main__title{
-    margin-top:40px;
+    margin:0;
     @extend %titular;
     }
 .main__section{
-    height:100%;
+    height:90%;
 }
 .main__articles{
     flex-wrap: wrap;
