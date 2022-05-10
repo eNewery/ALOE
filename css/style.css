@@ -43,7 +43,6 @@
   .main__articles {
     display: flex;
     flex-direction: column;
-    gap: 0px;
   }
 }
 /* RESET CSS */
@@ -60,7 +59,7 @@
 .body__container {
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 0, 34);
+  background: linear-gradient(#000a13, #000f1f);
   /* HEADER */
   /* MAIN */
   /* FOOTER */
@@ -69,7 +68,7 @@
   background-color: rgb(90, 153, 212);
   height: 10vh;
   width: 100%;
-  border-bottom: 2px solid rgb(65, 141, 255);
+  box-shadow: 1px 1px 20px 1px rgb(9, 66, 83);
   /* NAV */
 }
 .body__container header .title__nav {
@@ -102,20 +101,24 @@
   list-style: none;
   align-items: center;
 }
-.body__container header .nav__list a {
+.body__container header .nav__list li {
+  padding: 32px;
+}
+.body__container header .nav__list li a {
   text-decoration: none;
   color: white;
   font-weight: 560;
   padding: 5px;
   border-radius: 7px;
   transition: 0.5s;
+  padding: 6px;
 }
-.body__container header .nav__list a:hover {
+.body__container header .nav__list li a:hover {
   background-color: white;
   color: rgb(90, 153, 212);
 }
 .body__container main {
-  height: 80vh;
+  height: 75vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -143,6 +146,7 @@
 .body__container main button:hover {
   background-color: rgb(90, 153, 212);
   color: white;
+  box-shadow: 1px 1px 15px 1px rgb(9, 66, 83);
 }
 .body__container main h2 {
   color: rgb(90, 153, 212);
@@ -168,12 +172,16 @@
 .body__container main .card:hover {
   background-color: rgb(90, 153, 212);
   color: white;
+  box-shadow: 1px 2px 20px -2px rgb(9, 66, 83);
+}
+.body__container main .card:active {
+  background-color: rgb(17, 117, 148) !important;
 }
 .body__container main .card img {
   width: 145px;
 }
 .body__container main .card div p {
-  color: rgb(0, 0, 34);
+  color: linear-gradient(#000a13, #000f1f);
   margin-bottom: 10px;
 }
 .body__container main .card p {
@@ -181,8 +189,8 @@
   font-weight: bold;
 }
 .body__container footer {
-  border-top: 2px solid rgb(65, 141, 255);
-  height: 10vh;
+  box-shadow: 1px 1px 20px 1px rgb(9, 66, 83);
+  height: 15vh;
   width: 100%;
   background-color: rgb(90, 153, 212);
   display: flex;
@@ -290,7 +298,6 @@
   gap: 60px;
 }
 .main__articles .main__article {
-  border: 2px solid rgb(90, 153, 212);
   border-radius: 5px;
   padding: 16px;
   height: 130px;
@@ -299,11 +306,12 @@
 }
 .main__articles .main__article:hover {
   transform: translateY(-10px);
-  transition: 0.5s;
-  background-color: rgb(90, 153, 212);
+  transition: 1s;
+  border: 1px solid rgb(90, 153, 212);
+  box-shadow: 1px 4px 2px -2px rgb(9, 66, 83);
 }
 .main__articles .main__article button {
-  color: rgb(0, 0, 34);
+  color: linear-gradient(#000a13, #000f1f);
 }
 .main__articles .main__article .main__article {
   display: flex;
@@ -311,6 +319,58 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+/* CLASS BODY */
+.body__class {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header" "aside main" "footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.class__aside {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-area: aside;
+}
+.class__aside ul {
+  list-style: none;
+}
+.class__aside ul li {
+  font-weight: 550;
+  padding: 16px;
+  transition: 1s;
+}
+.class__aside ul li:hover {
+  transition: 1s;
+  transform: translateX(10px);
+}
+.class__aside ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 560;
+  padding: 5px;
+  border-radius: 7px;
+  transition: 0.5s;
+  color: rgb(90, 153, 212);
+}
+.class__aside ul li a:hover {
+  background-color: white;
+  color: rgb(90, 153, 212);
 }
 
 /*# sourceMappingURL=style.css.map */
