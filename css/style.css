@@ -373,4 +373,20 @@ footer {
   color: rgb(90, 153, 212);
 }
 
+figcaption img {
+  position: relative;
+  top: 30px;
+}
+
+.description {
+  padding: 5px;
+  border-radius: 7px;
+  transition: 1s;
+  border: 1px solid rgb(90, 153, 212);
+}
+.description:hover {
+  background-color: rgba(17, 117, 148, 0.1);
+  transition: 1s;
+}
+
 /*# sourceMappingURL=style.css.map */
