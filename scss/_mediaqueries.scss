@@ -29,7 +29,11 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    
+    .description{
+        #classbutton{
+            display:none;
+        }
+    }
         button{
             position: relative;
             bottom:250px;

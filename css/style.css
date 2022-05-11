@@ -28,6 +28,9 @@
     align-items: center;
     flex-direction: column;
   }
+  .body__container .main .description #classbutton {
+    display: none;
+  }
   .body__container .main button {
     position: relative;
     bottom: 250px;
@@ -387,6 +390,10 @@ figcaption img {
 .description:hover {
   background-color: rgba(17, 117, 148, 0.1);
   transition: 1s;
+}
+.description #classbutton {
+  margin: 6px;
+  padding: 6px;
 }
 
 /*# sourceMappingURL=style.css.map */
