@@ -1,11 +1,13 @@
 /* VARIABLES */
+var cardtyp1 = document.getElementById("cardtype1");
+var cardtyp2 = document.getElementById("cardtype2");
+var cardtyp3 = document.getElementById("cardtype3");
 
-var classbutt = document.getElementById("classbutton"); 
-var cardtyp = document.getElementById("cardtypes");
 
 /* FUNCIONES */
-cardtyp.onclick = erro;
-classbutt.onclick = erro;
+cardtyp1.onclick = erro;
+cardtyp2.onclick = erro;
+cardtyp3.onclick = erro;
 function erro() {
     alert("Espera, aún no he añadido esa función.")
 }
