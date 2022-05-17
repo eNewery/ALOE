@@ -11,3 +11,5 @@ cardtyp3.onclick = erro;
 function erro() {
     alert("Espera, aún no he añadido esa función.")
 }
+let nombre = prompt("¿Cual es tu nombre?");
+alert("Bienvenido a Aloe "+nombre);
